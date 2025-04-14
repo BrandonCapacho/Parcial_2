@@ -1,86 +1,84 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
+<head>
     <meta charset="UTF-8" />
     <title>Vivero Vital - Control de Invernadero</title>
-  </head>
-  <body>
-    <!-- Barra superior -->
-    <header style="background-color: rgb(108, 236, 108); border-radius: 3px; color: rgb(0, 0, 0); padding: 10px; display: flex; justify-content: space-between; align-items: center; margin-bottom: 40px;">
-      <div style="display: flex; align-items: center;">
-        <img src="https://png.pngtree.com/png-vector/20240705/ourmid/pngtree-an-illustration-of-a-black-feather-feather-vector-png-image_7064150.png" alt="pluma" style="height: 25px; margin-right: 10px;">
-        <b>Vivero Colombia</b>
-      </div>
-      <div> — ▢ ✕ </div>
-    </header>
-   
-    <table width="100%" style="margin-bottom: 80px">
-      <tr>
-        <td>
-          <div size="50" style="border-radius: 20px; border: 2px solid black; padding: 5px">Buscar</div>
-        </td>
-        <td align="right">[🟢] [👤]</td>
-      </tr>
-    </table>
-    <div style="margin: 0 150px 40px;">
-      <div style="display: flex; justify-content: space-between; align-items: center; padding: 10px; margin: 20px 0;  border-radius: 10px; color: white;">
-        <div style="flex: 1; padding: 10px; border-radius: 100px; text-align: center; border: 2px solid black; background-color: rgb(174, 174, 174); margin-right: 20px; color: black;">
-          <b style="flex: 1; text-align: center; margin-right: 20px; color: black;">Invernadero Los Andes</b>
+</head>
+<body style="margin: 0; padding: 0; font-family: Arial, sans-serif; background-color: #f8f9fa;">
+    <div style="background-color: #e9ecef; padding: 20px; border-bottom: 3px solid #ced4da; display: flex; justify-content: space-between; align-items: center;">
+        <div style="display: flex; align-items: center;">
+            <img src="https://cdn-icons-png.flaticon.com/512/3159/3159367.png" alt="Ícono de Hoja" style="height: 30px; margin-right: 10px;">
+            <h1 style="margin: 0; color: #28a745;"><b>Vivero Colombia</b></h1>
         </div>
-        <div style="flex: 1; padding: 10px; border-radius: 100px; text-align: center; border: 2px solid black; background-color: #eaff00; margin-right: 20px; color: black;">Operativo</div>
-        <div style="flex: 1; padding: 10px;  border: 2px solid black; background-color: #ccec57; text-align: center;  color: black; border-collapse: collapse;">Editar</div>
-        <div style="flex: 1; padding: 10px; border: 2px solid black; background-color: #ccec57; text-align: center;  color: black; border-collapse: collapse;">Eliminar</div>
-        <div style="flex: 1; padding: 10px;  border: 2px solid black; background-color: #d6aa34; text-align: center; color: black; border-collapse: collapse;">Detalles</div>
-      </div>
-
-      <div style="display: flex; justify-content: space-between; align-items: center; padding: 10px; margin: 20px 0;  border-radius: 10px; color: white;">
-        <div style="flex: 1; padding: 10px; border-radius: 100px; text-align: center; border: 2px solid black; background-color: rgb(174, 174, 174); margin-right: 20px; color: black;">
-          <b style="flex: 1; text-align: center; margin-right: 20px; color: black;">Invernadero Las Flores</b>
+        <div>
+            <span style="margin-right: 10px;">[<span style="color: green;">&#128994;</span>]</span>
+            <span>[<img src="https://cdn-icons-png.flaticon.com/512/194/194938.png" alt="Ícono de Persona" style="height: 20px; vertical-align: middle;">]</span>
         </div>
-        <div style="flex: 1; padding: 10px; border-radius: 100px; text-align: center; border: 2px solid black; background-color: #eaff00; margin-right: 20px; color: black;">Reparación</div>
-        <div style="flex: 1; padding: 10px;  border: 2px solid black; background-color: #ccec57; text-align: center;  color: black; border-collapse: collapse;">Editar</div>
-        <div style="flex: 1; padding: 10px; border: 2px solid black; background-color: #ccec57; text-align: center;  color: black; border-collapse: collapse;">Eliminar</div>
-        <div style="flex: 1; padding: 10px;  border: 2px solid black; background-color: #d6aa34; text-align: center; color: black; border-collapse: collapse;">Detalles</div>
-      </div>
-
-      <div style="display: flex; justify-content: space-between; align-items: center; padding: 10px; margin: 20px 0;  border-radius: 10px; color: white;">
-        <div style="flex: 1; padding: 10px; border-radius: 100px; text-align: center; border: 2px solid black; background-color: rgb(174, 174, 174); margin-right: 20px; color: black;">
-          <b style="flex: 1; text-align: center; margin-right: 20px; color: black;">Invernadero Los Pinos</b>
-        </div>
-        <div style="flex: 1; padding: 10px; border-radius: 100px; text-align: center; border: 2px solid black; background-color: #eaff00; margin-right: 20px; color: black;">Inspección</div>
-        <div style="flex: 1; padding: 10px;  border: 2px solid black; background-color: #ccec57; text-align: center;  color: black; border-collapse: collapse;">Editar</div>
-        <div style="flex: 1; padding: 10px; border: 2px solid black; background-color: #ccec57; text-align: center;  color: black; border-collapse: collapse;">Eliminar</div>
-        <div style="flex: 1; padding: 10px;  border: 2px solid black; background-color: #d6aa34; text-align: center; color: black; border-collapse: collapse;">Detalles</div>
-      </div>
-
-      <div style="display: flex; justify-content: space-between; align-items: center; padding: 10px; margin: 20px 0;  border-radius: 10px; color: white;">
-        <div style="flex: 1; padding: 10px; border-radius: 100px; text-align: center; border: 2px solid black; background-color: rgb(174, 174, 174); margin-right: 20px; color: black;">
-          <b style="flex: 1; text-align: center; margin-right: 20px; color: black;">Invernadero El Mirador</b>
-        </div>
-        <div style="flex: 1; padding: 10px; border-radius: 100px; text-align: center; border: 2px solid black; background-color: #eaff00; margin-right: 20px; color: black;">Expansión</div>
-        <div style="flex: 1; padding: 10px;  border: 2px solid black; background-color: #ccec57; text-align: center;  color: black; border-collapse: collapse;">Editar</div>
-        <div style="flex: 1; padding: 10px; border: 2px solid black; background-color: #ccec57; text-align: center;  color: black; border-collapse: collapse;">Eliminar</div>
-        <div style="flex: 1; padding: 10px;  border: 2px solid black; background-color: #d6aa34; text-align: center; color: black; border-collapse: collapse;">Detalles</div>
-      </div>
-      <div style="display: flex; justify-content: space-between; align-items: center; padding: 10px; margin: 20px 0;  border-radius: 10px; color: white;">
-        <div style="flex: 1; padding: 10px; border-radius: 100px; text-align: center; border: 2px solid black; background-color: rgb(174, 174, 174); margin-right: 20px; color: black;">
-          <b style="flex: 1; text-align: center; margin-right: 20px; color: black;">Invernadero Las Brisas</b>
-        </div>
-        <div style="flex: 1; padding: 10px; border-radius: 100px; text-align: center; border: 2px solid black; background-color: #eaff00; margin-right: 20px; color: black;">Operativo</div>
-        <div style="flex: 1; padding: 10px;  border: 2px solid black; background-color: #ccec57; text-align: center;  color: black; border-collapse: collapse;">Editar</div>
-        <div style="flex: 1; padding: 10px; border: 2px solid black; background-color: #ccec57; text-align: center;  color: black; border-collapse: collapse;">Eliminar</div>
-        <div style="flex: 1; padding: 10px;  border: 2px solid black; background-color: #d6aa34; text-align: center; color: black; border-collapse: collapse;">Detalles</div>
-      </div>
     </div>
-    
+
+    <div style="padding: 20px; display: flex; justify-content: space-between; align-items: center;">
+        <div style="border: 1px solid #ccc; border-radius: 25px; padding: 8px 15px; background-color: #fff;">
+            Buscar
+        </div>
+        <p style="margin: 0;"><b>Filtrar:</b> Invernaderos <span style="font-size: 0.8em;">▼</span></p>
+    </div>
+
+    <div style="padding: 20px;">
+        <div style="margin-bottom: 20px;">
+            <div style="display: flex; justify-content: space-between; align-items: center; padding: 10px; margin-bottom: 10px; border-radius: 8px; background-color: #fff; border: 1px solid #ddd;">
+                <div style="flex: 2; font-weight: bold; color: #333;">Invernadero Los Andes</div>
+                <div style="flex: 1; text-align: center; color: #155724; background-color: #d4edda; border: 1px solid #c3e6cb; border-radius: 5px; padding: 8px;">Operativo</div>
+                <div style="flex: 1; text-align: center; color: #0056b3; background-color: #e7f2fa; border: 1px solid #b8daff; border-radius: 5px; padding: 8px; cursor: pointer;">Editar</div>
+                <div style="flex: 1; text-align: center; color: #c82333; background-color: #f8d7da; border: 1px solid #f5c6cb; border-radius: 5px; padding: 8px; cursor: pointer;">Eliminar</div>
+                <div style="flex: 1; text-align: center; color: #856404; background-color: #fff3cd; border: 1px solid #ffeeba; border-radius: 5px; padding: 8px; cursor: pointer;">Detalles</div>
+            </div>
+            <div style="display: flex; justify-content: space-between; align-items: center; padding: 10px; margin-bottom: 10px; border-radius: 8px; background-color: #fff; border: 1px solid #ddd;">
+                <div style="flex: 2; font-weight: bold; color: #333;">Invernadero Las Flores</div>
+                <div style="flex: 1; text-align: center; color: #856404; background-color: #fff3cd; border: 1px solid #ffeeba; border-radius: 5px; padding: 8px;">Reparación</div>
+                <div style="flex: 1; text-align: center; color: #0056b3; background-color: #e7f2fa; border: 1px solid #b8daff; border-radius: 5px; padding: 8px; cursor: pointer;">Editar</div>
+                <div style="flex: 1; text-align: center; color: #c82333; background-color: #f8d7da; border: 1px solid #f5c6cb; border-radius: 5px; padding: 8px; cursor: pointer;">Eliminar</div>
+                <div style="flex: 1; text-align: center; color: #856404; background-color: #fff3cd; border: 1px solid #ffeeba; border-radius: 5px; padding: 8px; cursor: pointer;">Detalles</div>
+            </div>
+            <div style="display: flex; justify-content: space-between; align-items: center; padding: 10px; margin-bottom: 10px; border-radius: 8px; background-color: #fff; border: 1px solid #ddd;">
+                <div style="flex: 2; font-weight: bold; color: #333;">Invernadero Los Pinos</div>
+                <div style="flex: 1; text-align: center; color: #856404; background-color: #fff3cd; border: 1px solid #ffeeba; border-radius: 5px; padding: 8px;">Inspección</div>
+                <div style="flex: 1; text-align: center; color: #0056b3; background-color: #e7f2fa; border: 1px solid #b8daff; border-radius: 5px; padding: 8px; cursor: pointer;">Editar</div>
+                <div style="flex: 1; text-align: center; color: #c82333; background-color: #f8d7da; border: 1px solid #f5c6cb; border-radius: 5px; padding: 8px; cursor: pointer;">Eliminar</div>
+                <div style="flex: 1; text-align: center; color: #856404; background-color: #fff3cd; border: 1px solid #ffeeba; border-radius: 5px; padding: 8px; cursor: pointer;">Detalles</div>
+            </div>
+            <div style="display: flex; justify-content: space-between; align-items: center; padding: 10px; margin-bottom: 10px; border-radius: 8px; background-color: #fff; border: 1px solid #ddd;">
+                <div style="flex: 2; font-weight: bold; color: #333;">Invernadero El Mirador</div>
+                <div style="flex: 1; text-align: center; color: #856404; background-color: #fff3cd; border: 1px solid #ffeeba; border-radius: 5px; padding: 8px;">Expansión</div>
+                <div style="flex: 1; text-align: center; color: #0056b3; background-color: #e7f2fa; border: 1px solid #b8daff; border-radius: 5px; padding: 8px; cursor: pointer;">Editar</div>
+                <div style="flex: 1; text-align: center; color: #c82333; background-color: #f8d7da; border: 1px solid #f5c6cb; border-radius: 5px; padding: 8px; cursor: pointer;">Eliminar</div>
+                <div style="flex: 1; text-align: center; color: #856404; background-color: #fff3cd; border: 1px solid #ffeeba; border-radius: 5px; padding: 8px; cursor: pointer;">Detalles</div>
+            </div>
+            <div style="display: flex; justify-content: space-between; align-items: center; padding: 10px; margin-bottom: 10px; border-radius: 8px; background-color: #fff; border: 1px solid #ddd;">
+                <div style="flex: 2; font-weight: bold; color: #333;">Invernadero Las Brisas</div>
+                <div style="flex: 1; text-align: center; color: #155724; background-color: #d4edda; border: 1px solid #c3e6cb; border-radius: 5px; padding: 8px;">Operativo</div>
+                <div style="flex: 1; text-align: center; color: #0056b3; background-color: #e7f2fa; border: 1px solid #b8daff; border-radius: 5px; padding: 8px; cursor: pointer;">Editar</div>
+                <div style="flex: 1; text-align: center; color: #c82333; background-color: #f8d7da; border: 1px solid #f5c6cb; border-radius: 5px; padding: 8px; cursor: pointer;">Eliminar</div>
+                <div style="flex: 1; text-align: center; color: #856404; background-color: #fff3cd; border: 1px solid #ffeeba; border-radius: 5px; padding: 8px; cursor: pointer;">Detalles</div>
+            </div>
+        </div>
+
+        <div style="text-align: right; margin-top: 20px;">
+            <a href="page3.html" style="background-color: #007bff; color: white; padding: 10px 15px; border-radius: 5px; text-decoration: none;">
+                <img src="https://cdn-icons-png.flaticon.com/512/93/93634.png" alt="Ícono de Regresar" style="height: 16px; margin-right: 5px; vertical-align: middle;">
+                Regresar
+            </a>
+            
+        </div>
+      
+    </div>
+
+    <div style="background-color: #343a40; color: #fff; padding: 20px; text-align: center; border-top: 3px solid #6c757d; margin-top: 30px;">
+      <p style="margin: 0;">&copy; 2025 Vivero Vital. Todos los derechos reservados.</p>
+      <div style="margin-top: 10px;">
+          <a href="#" style="color: #fff; text-decoration: none; margin: 0 10px;"><img src="https://cdn-icons-png.flaticon.com/512/1384/1384005.png" alt="Ícono de Facebook" style="height: 24px; vertical-align: middle;"></a>
+          <a href="#" style="color: #fff; text-decoration: none; margin: 0 10px;"><img src="https://cdn-icons-png.flaticon.com/512/1384/1384017.png" alt="Ícono de Twitter" style="height: 24px; vertical-align: middle;"></a>
+          <a href="#" style="color: #fff; text-decoration: none; margin: 0 10px;"><img src="https://cdn-icons-png.flaticon.com/512/1384/1384021.png" alt="Ícono de Instagram" style="height: 24px; vertical-align: middle;"></a>
+      </div>
   </div>
-  
-    <br>
-
-    <a href="index.html" style="background-color: #4caf50; color: white; padding: 8px 16px; border-radius: 10px; text-decoration: none; position: absolute; bottom: 20px; right: 20px;">Regresar</a>
-<br>
-    <div style="width: 99%; background-color: yellow; text-align: center; padding: 8px 16px; position: relative; margin-top: 20px;">
-      Control invernadero
-    </div>
-  </body>
+</body>
 </html>
