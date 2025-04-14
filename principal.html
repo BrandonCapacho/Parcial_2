@@ -1,36 +1,55 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+    <!-- Declaración del conjunto de caracteres utilizado -->
     <meta charset="UTF-8">
+    <!-- Configuración para que la página sea responsive -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Título de la página -->
     <title>Vivero Colombia</title>
 </head>
 <body style="font-family: Arial, sans-serif; margin: 0; background-color: #f8f9fa; color: #333;">
 
+    <!-- Encabezado de la página -->
     <div style="background-color: #e9ecef; padding: 20px; border-bottom: 3px solid #ced4da; display: flex; justify-content: space-between; align-items: center;">
+        <!-- Logo e identificación del sitio -->
         <div style="display: flex; align-items: center;">
+            <!-- Ícono de hoja -->
             <img src="https://cdn-icons-png.flaticon.com/512/3159/3159367.png" alt="Ícono de Hoja" style="height: 30px; margin-right: 10px;">
+            <!-- Nombre del sitio -->
             <h1 style="margin: 0; color: #28a745;"><b>Vivero Colombia</b></h1>
         </div>
+        <!-- Menú de navegación -->
         <div style="display: flex; gap: 15px;">
-          <a href="page2.html" style="color: #007bff; text-decoration: none;">Inicio</a>
-          <a href="page4.html" style="color: #007bff; text-decoration: none;">Invernaderos</a>
-          <a href="index.html" style="color: #007bff; text-decoration: none;">Cerrar Sesión</a>
-      </div>
+            <!-- Enlace a la página principal -->
+            <a href="principal.html" style="color: #007bff; text-decoration: none;">Inicio</a>
+            <!-- Enlace a la página de invernaderos -->
+            <a href="invernaderos.html" style="color: #007bff; text-decoration: none;">Invernaderos</a>
+            <!-- Enlace para cerrar sesión -->
+            <a href="index.html" style="color: #007bff; text-decoration: none;">Cerrar Sesión</a>
+        </div>
     </div>
 
+    <!-- Barra de búsqueda y filtro -->
     <div style="padding: 20px; display: flex; justify-content: space-between; align-items: center;">
+        <!-- Campo de búsqueda (solo visual) -->
         <div style="border: 1px solid #ccc; border-radius: 25px; padding: 8px 15px; background-color: #fff;">
             Buscar
         </div>
+        <!-- Filtro de invernaderos -->
         <p style="margin: 0;"><b>Filtrar:</b> Invernaderos <span style="font-size: 0.8em;">▼</span></p>
     </div>
 
+    <!-- Contenedor principal de los invernaderos -->
     <div style="padding: 20px; display: flex; gap: 20px; flex-wrap: wrap; justify-content: center;">
 
+        <!-- Tarjeta del invernadero "Los Andes" -->
         <div style="background-color: #fff; border: 1px solid #ddd; border-radius: 8px; padding: 15px; width: 350px; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);">
+            <!-- Título del invernadero -->
             <h3 style="color: #28a745; text-align: center; font-size: 1.2em; margin-top: 0;">Invernadero Los Andes</h3>
+            <!-- Imagen del invernadero -->
             <img src="https://img.freepik.com/vector-gratis/muchas-plantas-invernadero-pared-vidrio-carretilla-sobre-fondo-blanco_1308-53210.jpg?semt=ais_hybrid&w=740" alt="Invernadero Los Andes" style="width: 100%; height: auto; border-radius: 5px; margin-bottom: 10px;">
+            <!-- Información del invernadero -->
             <div style="font-size: 0.9em; color: #555;">
                 <div style="padding: 5px; border-bottom: 1px solid #eee; margin-bottom: 5px;">Nombre: Invernadero Los Andes</div>
                 <div style="padding: 5px; border-bottom: 1px solid #eee; margin-bottom: 5px;">Capacidad: 2000 m²</div>
@@ -40,12 +59,15 @@
                 <div style="padding: 5px; border-bottom: 1px solid #eee; margin-bottom: 5px;">Creación: 2025-04-13</div>
                 <div style="padding: 5px; margin-bottom: 10px;">Responsable: María López</div>
             </div>
-           
         </div>
 
+        <!-- Tarjeta del invernadero "Las Flores" -->
         <div style="background-color: #fff; border: 1px solid #ddd; border-radius: 8px; padding: 15px; width: 350px; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);">
+            <!-- Título del invernadero -->
             <h3 style="color: #28a745; text-align: center; font-size: 1.2em; margin-top: 0;">Invernadero Las Flores</h3>
+            <!-- Imagen del invernadero -->
             <img src="https://img.freepik.com/vector-gratis/muchas-plantas-invernadero-pared-vidrio-carretilla-sobre-fondo-blanco_1308-53210.jpg?semt=ais_hybrid&w=740" alt="Invernadero Las Flores" style="width: 100%; height: auto; border-radius: 5px; margin-bottom: 10px;">
+            <!-- Información del invernadero -->
             <div style="font-size: 0.9em; color: #555;">
                 <div style="padding: 5px; border-bottom: 1px solid #eee; margin-bottom: 5px;">Nombre: Invernadero Las Flores</div>
                 <div style="padding: 5px; border-bottom: 1px solid #eee; margin-bottom: 5px;">Capacidad: 3000 m²</div>
@@ -55,22 +77,33 @@
                 <div style="padding: 5px; border-bottom: 1px solid #eee; margin-bottom: 5px;">Creación: 2025-04-13</div>
                 <div style="padding: 5px; margin-bottom: 10px;">Responsable: Juan Pérez</div>
             </div>
-            
         </div>
 
     </div>
 
+    <!-- Pie de página -->
     <div style="background-color: #343a40; color: #fff; padding: 20px; text-align: center; border-top: 3px solid #6c757d; margin-top: 30px;">
+        <!-- Derechos reservados -->
         <p style="margin: 0;">&copy; 2025 Vivero Colombia. Todos los derechos reservados.</p>
+        <!-- Íconos de redes sociales -->
         <div style="margin-top: 10px;">
-            <a href="#" style="color: #fff; text-decoration: none; margin: 0 10px;"><img src="https://cdn-icons-png.flaticon.com/512/1384/1384005.png" alt="Ícono de Facebook" style="height: 24px; vertical-align: middle;"></a>
-            <a href="#" style="color: #fff; text-decoration: none; margin: 0 10px;"><img src="https://cdn-icons-png.flaticon.com/512/1384/1384017.png" alt="Ícono de Twitter" style="height: 24px; vertical-align: middle;"></a>
-            <a href="#" style="color: #fff; text-decoration: none; margin: 0 10px;"><img src="https://cdn-icons-png.flaticon.com/512/1384/1384021.png" alt="Ícono de Instagram" style="height: 24px; vertical-align: middle;"></a>
+            <!-- Enlace a Facebook -->
+            <a href="#" style="color: #fff; text-decoration: none; margin: 0 10px;">
+                <img src="https://cdn-icons-png.flaticon.com/512/1384/1384005.png" alt="Ícono de Facebook" style="height: 24px; vertical-align: middle;">
+            </a>
+            <!-- Enlace a Twitter -->
+            <a href="#" style="color: #fff; text-decoration: none; margin: 0 10px;">
+                <img src="https://cdn-icons-png.flaticon.com/512/1384/1384017.png" alt="Ícono de Twitter" style="height: 24px; vertical-align: middle;">
+            </a>
+            <!-- Enlace a Instagram -->
+            <a href="#" style="color: #fff; text-decoration: none; margin: 0 10px;">
+                <img src="https://cdn-icons-png.flaticon.com/512/1384/1384021.png" alt="Ícono de Instagram" style="height: 24px; vertical-align: middle;">
+            </a>
         </div>
     </div>
 
-    <a href="page3.html" style="background-color: #007bff; color: white; padding: 12px 20px; border-radius: 10px; text-decoration: none; position: fixed; bottom: 30px; right: 20px;">Registrar invernadero</a>
+    <!-- hipervinculo para registrar un nuevo invernadero -->
+    <a href="configuracion_Invernadero.html" style="background-color: #007bff; color: white; padding: 12px 20px; border-radius: 10px; text-decoration: none; position: fixed; bottom: 30px; right: 20px;">Registrar invernadero</a>
 
-   
 </body>
 </html>
