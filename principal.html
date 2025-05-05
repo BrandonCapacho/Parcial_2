@@ -32,12 +32,19 @@
 
     <!-- Barra de búsqueda y filtro -->
     <div style="padding: 20px; display: flex; justify-content: space-between; align-items: center;">
-        <!-- Campo de búsqueda (solo visual) -->
-        <div style="border: 1px solid #ccc; border-radius: 25px; padding: 8px 15px; background-color: #fff;">
-            Buscar
-        </div>
-        <!-- Filtro de invernaderos -->
-        <p style="margin: 0;"><b>Filtrar:</b> Invernaderos <span style="font-size: 0.8em;">▼</span></p>
+        <!-- Campo de búsqueda funcional -->
+        <form action="principal.html" method="GET" style="display: flex; align-items: center; width: 100%; margin-right: 20px;">
+            <input 
+                type="text" 
+                name="query" 
+                placeholder="Buscar únicamente en la página principal..." 
+                style="flex: 1; border: 1px solid #ccc; border-radius: 25px; padding: 8px 15px; background-color: #fff; outline: none; font-size: 1em;">
+            <button 
+                type="submit" 
+                style="margin-left: 10px; background-color: #28a745; color: white; border: none; border-radius: 25px; padding: 8px 15px; cursor: pointer; font-size: 1em;">
+                Buscar
+            </button>
+        </form>
     </div>
 
     <!-- Contenedor principal de los invernaderos -->
@@ -55,7 +62,7 @@
                 <div style="padding: 5px; border-bottom: 1px solid #eee; margin-bottom: 5px;">Capacidad: 2000 m²</div>
                 <div style="padding: 5px; border-bottom: 1px solid #eee; margin-bottom: 5px;">Superficie útil: 1800 m²</div>
                 <div style="padding: 5px; border-bottom: 1px solid #eee; margin-bottom: 5px;">Cultivo: Flores</div>
-                <div style="padding: 5px; border-bottom: 1px solid #eee; margin-bottom: 5px;">Riego: Automático</div>
+                <div style="padding: 5px; border-bottom: 1px solid #eee; margin-bottom: 5px;">Riego: Aspersores</div>
                 <div style="padding: 5px; border-bottom: 1px solid #eee; margin-bottom: 5px;">Creación: 2025-04-13</div>
                 <div style="padding: 5px; margin-bottom: 10px;">Responsable: María López</div>
             </div>
@@ -73,7 +80,7 @@
                 <div style="padding: 5px; border-bottom: 1px solid #eee; margin-bottom: 5px;">Capacidad: 3000 m²</div>
                 <div style="padding: 5px; border-bottom: 1px solid #eee; margin-bottom: 5px;">Superficie útil: 2500 m²</div>
                 <div style="padding: 5px; border-bottom: 1px solid #eee; margin-bottom: 5px;">Cultivo: Hortalizas</div>
-                <div style="padding: 5px; border-bottom: 1px solid #eee; margin-bottom: 5px;">Riego: Manual</div>
+                <div style="padding: 5px; border-bottom: 1px solid #eee; margin-bottom: 5px;">Riego: Manguera</div>
                 <div style="padding: 5px; border-bottom: 1px solid #eee; margin-bottom: 5px;">Creación: 2025-04-13</div>
                 <div style="padding: 5px; margin-bottom: 10px;">Responsable: Juan Pérez</div>
             </div>

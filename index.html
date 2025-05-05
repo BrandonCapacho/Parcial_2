@@ -18,10 +18,14 @@
         </div>
         <!-- Íconos adicionales en el encabezado -->
         <div>
-            <!-- Ícono de estado (verde) -->
-            <span style="margin-right: 10px;">[<span style="color: green;">&#128994;</span>]</span>
-            <!-- Ícono de usuario -->
-            <span>[<img src="https://cdn-icons-png.flaticon.com/512/194/194938.png" alt="Ícono de Persona" style="height: 20px; vertical-align: middle;">]</span>
+            <table style="border-collapse: collapse;">
+                <tr>    
+                    <!-- Ícono de usuario -->
+                    <td style="text-align: center;">
+                        <img src="https://cdn-icons-png.flaticon.com/512/194/194938.png" alt="Ícono de Persona" style="height: 30px; vertical-align: middle;">
+                    </td>
+                </tr>
+            </table>
         </div>
     </div>
 
@@ -30,29 +34,31 @@
         <div style="background-color: #fff; border: 1px solid #28a745; border-radius: 10px; width: 350px; padding: 30px; text-align: center; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
             <!-- Título del formulario -->
             <h2 style="color: #28a745; margin-top: 0;">Iniciar Sesión</h2>
-            <div style="margin-top: 20px;">
-                <!-- Campo de usuario (solo visual) -->
-                <div style="border: 1px solid #ccc; border-radius: 5px; background-color: #f8f9fa; margin-bottom: 15px; padding: 10px; text-align: left;">
-                    <!-- Ícono de usuario -->
-                    <img src="https://cdn-icons-png.flaticon.com/512/1828/1828774.png" alt="Ícono de Usuario" style="height: 20px; margin-right: 10px; vertical-align: middle;">
-                    <!-- Texto del usuario -->
-                    <span style="color: #6c757d;">admin</span>
+            <form action="principal.html" method="POST" style="margin-top: 20px;">
+                <!-- Campo de usuario -->
+                <div style="margin-bottom: 15px; text-align: left;">
+                    <label for="username" style="color: #6c757d; font-size: 0.9em;">Usuario</label>
+                    <div style="display: flex; align-items: center; border: 1px solid #ccc; border-radius: 5px; background-color: #f8f9fa; padding: 10px;">
+                        <img src="https://cdn-icons-png.flaticon.com/512/456/456212.png" alt="Ícono de Usuario" style="height: 15px; margin-right: 10px;">
+                        <input type="text" id="username" name="username" placeholder="Ingrese su usuario" style="border: none; outline: none; background: none; flex: 1; color: #6c757d;">
+                    </div>
                 </div>
-                <!-- Campo de contraseña (solo visual) -->
-                <div style="border: 1px solid #ccc; border-radius: 5px; background-color: #f8f9fa; margin-bottom: 20px; padding: 10px; text-align: left;">
-                    <!-- Ícono de contraseña -->
-                    <img src="https://cdn-icons-png.flaticon.com/512/109/109854.png" alt="Ícono de Contraseña" style="height: 20px; margin-right: 10px; vertical-align: middle;">
-                    <!-- La etiqueta <span> se utiliza para aplicar estilos o agrupar texto en línea sin afectar el flujo del contenido. -->
-                    <span style="color: #6c757d;">••••••••</span>
+                <!-- Campo de contraseña -->
+                <div style="margin-bottom: 20px; text-align: left;">
+                    <label for="password" style="color: #6c757d; font-size: 0.9em;">Contraseña</label>
+                    <div style="display: flex; align-items: center; border: 1px solid #ccc; border-radius: 5px; background-color: #f8f9fa; padding: 10px;">
+                        <img src="https://e7.pngegg.com/pngimages/847/381/png-clipart-computer-icons-fleche-address-bar-password.png" alt="Ícono de Contraseña" style="height: 20px; margin-right: 10px;">
+                        <input type="password" id="password" name="password" placeholder="Ingrese su contraseña" style="border: none; outline: none; background: none; flex: 1; color: #6c757d;">
+                    </div>
                 </div>
                 <!-- Botón de confirmación -->
-                <div style="background-color: #28a745; border-radius: 5px; padding: 12px; text-align: center;">
-                    <!-- Enlace al siguiente paso (page2.html) -->
-                    <a href="principal.html" style="text-decoration: none; color: white;">
-                        Confirmar
+              
+                    <a href="principal.html" style="text-decoration: none; color: white;"><div style="background-color: #28a745; border-radius: 5px; padding: 12px; text-align: center;">
+                        <!-- Enlace al siguiente paso--> Confirmar</div>
+                        
                     </a>
-                </div>
-            </div>
+               
+            </form>
         </div>
     </div>
 
@@ -61,7 +67,7 @@
         <!-- Derechos reservados -->
         <p style="margin: 0;">&copy; 2025 Vivero Colombia. Todos los derechos reservados.</p>
         <!-- Información adicional -->
-        <p style="margin: 5px 0; font-size: 0.9em;">02250131006 - 02250131012</p>
+        <p style="margin: 5px 0; font-size: 0.9em;">02250131006</p>
         <!-- Íconos de redes sociales -->
         <div style="margin-top: 10px;">
             <!-- Enlace a Facebook -->

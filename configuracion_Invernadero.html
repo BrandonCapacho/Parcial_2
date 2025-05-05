@@ -32,30 +32,75 @@
 
         <!-- Detalles del invernadero -->
         <div style="background-color: #fff; border: 1px solid #ddd; border-radius: 8px; padding: 20px; width: 400px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);">
-            <h2 style="color: #28a745; border-bottom: 2px solid #28a745; padding-bottom: 10px; margin-top: 0;">Detalles del Invernadero</h2>
-            <ul style="list-style: none; padding: 0;">
-                <!-- Información del invernadero -->
-                <li style="margin-bottom: 10px;"><strong style="color: #555;">Nombre:</strong> Invernadero Los Andes</li>
-                <li style="margin-bottom: 10px;"><strong style="color: #555;">Superficie:</strong> 1200 m² </li>
-                <li style="margin-bottom: 10px;"><strong style="color: #555;">Cultivo:</strong> Flores </li>
-                <li style="margin-bottom: 10px;"><strong style="color: #555;">Riego:</strong> Automático</li>
-                <li style="margin-bottom: 10px;"><strong style="color: #555;">Creación:</strong> 2025-04-13 
-                    <!-- Ícono de calendario -->
-                    <img src="https://cdn-icons-png.flaticon.com/512/3031/3031293.png" alt="Ícono de Calendario" style="height: 16px; margin-left: 5px;">
-                </li>
-                <li style="margin-bottom: 10px;"><strong style="color: #555;">Responsable:</strong> María López 
-                    <!-- Ícono de persona -->
-                    <img src="https://cdn-icons-png.flaticon.com/512/194/194938.png" alt="Ícono de Persona" style="height: 16px; margin-left: 5px;">
-                </li>
-                <li style="margin-bottom: 10px;"><strong style="color: #555;">Capacidad:</strong> 3500 toneladas </li>
-            </ul>
-            <!-- Botones de acción -->
-            <div style="display: flex; gap: 10px; justify-content: center;">
-                <!-- Imitando botón para ver detalles -->
-                <a href="#" style="background-color: #28a745; color: white; padding: 10px 15px; text-decoration: none; border-radius: 5px;">Ver Detalles</a>
-                <!-- Imitando botón para editar -->
-                <a href="#" style="background-color: #dc3545; color: white; padding: 10px 15px; text-decoration: none; border-radius: 5px;">Editar</a>
-            </div>
+            <fieldset style="border: 1px solid #ccc; padding: 10px; border-radius: 5px;">
+                <legend style="color: #28a745;">Detalles del Invernadero</legend>
+                <form>
+                    <ul style="list-style: none; padding: 0;">
+                        <!-- Información del invernadero -->
+                        <li style="margin-bottom: 10px;">
+                            <label for="nombre" style="color: #555;"><strong>Nombre:</strong></label>
+                            <input type="text" id="nombre" name="nombre" style="width: 100%; padding: 5px; border: 1px solid #ccc; border-radius: 4px;">
+                        </li>
+                        <li style="margin-bottom: 10px;">
+                            <label for="superficie" style="color: #555;"><strong>Superficie:</strong></label>
+                            <input type="text" id="superficie" name="superficie" style="width: 100%; padding: 5px; border: 1px solid #ccc; border-radius: 4px;">
+                        </li>
+                        <li style="margin-bottom: 10px;">
+                            <label for="cultivo" style="color: #555;"><strong>Cultivo:</strong></label>
+                            <input list="cultivos" id="cultivo" name="cultivo" style="width: 100%; padding: 5px; border: 1px solid #ccc; border-radius: 4px;">
+                            <datalist id="cultivos">
+                                <option value="Flores">
+                                <option value="Hortalizas">
+                                <option value="Frutas">
+                            </datalist>
+                        </li>
+                        <li style="margin-bottom: 10px;">
+                            <label for="riego" style="color: #555;"><strong>Riego:</strong></label>
+                            <select id="riego" name="riego" style="width: 100%; padding: 5px; border: 1px solid #ccc; border-radius: 4px;">
+                                <optgroup label="Automatizado">
+                                    <option value="aspersores">Aspersores</option>
+                                    <option value="goteo">Por Goteo</option>
+                                </optgroup>
+                                <optgroup label="Manual">
+                                    <option value="manguera">Manguera</option>
+                                    <option value="regadera">Regadera</option>
+                                </optgroup>
+                            </select>
+                        </li>
+                        <li style="margin-bottom: 10px;">
+                            <label for="creacion" style="color: #555;"><strong>Creación:</strong></label>
+                            <input type="date" id="creacion" name="creacion" style="width: 100%; padding: 5px; border: 1px solid #ccc; border-radius: 4px;">
+                            
+                        </li>
+                        <li style="margin-bottom: 10px;">
+                            <label for="responsable" style="color: #555;"><strong>Responsable:</strong></label>
+                            <input type="text" id="responsable" name="responsable" style="width: 100%; padding: 5px; border: 1px solid #ccc; border-radius: 4px;">
+                            
+                        </li>
+                        <li style="margin-bottom: 10px;">
+                            <label for="capacidad" style="color: #555;"><strong>Capacidad:</strong></label>
+                            <input type="text" id="capacidad" name="capacidad" style="width: 100%; padding: 5px; border: 1px solid #ccc; border-radius: 4px;">
+                        </li>
+                        <li style="margin-bottom: 10px;">
+                            <label for="capacidad" style="color: #555;"><strong>Capacidad Utilizada:</strong></label>
+                            <meter id="capacidad" value="1" min="0" max="100" style="width: 100%;"></meter>
+                        </li>
+                        <li style="margin-bottom: 10px;">
+                            <label for="progreso" style="color: #555;"><strong>Progreso de Cultivo:</strong></label>
+                            <progress id="progreso" value="70" max="100" style="width: 100%;"></progress>
+                        </li>
+                        <li style="margin-bottom: 10px;">
+                            <label for="descripcion" style="color: #555;"><strong>Descripción:</strong></label>
+                            <textarea id="descripcion" name="descripcion" rows="4" style="width: 100%; padding: 5px; border: 1px solid #ccc; border-radius: 4px;"></textarea>
+                        </li>
+                    </ul>
+                    <!-- Botones de acción -->
+                    <div style="display: flex; gap: 10px; justify-content: center;">
+                        <button type="submit" style="background-color: #28a745; color: white; padding: 10px 15px; border: none; border-radius: 5px; cursor: pointer;">Guardar</button>
+                        <button type="reset" style="background-color: #dc3545; color: white; padding: 10px 15px; border: none; border-radius: 5px; cursor: pointer;">Cancelar</button>
+                    </div>
+                </form>
+            </fieldset>
         </div>
 
         <!-- Imagen del invernadero -->
